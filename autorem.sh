@@ -1,3 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
-/home/moltony/scripts/autorem-real.sh &
+cd $(dirname $0)
+./autorem-real.sh &
