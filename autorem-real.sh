@@ -5,7 +5,7 @@ sleep 10
 
 notify-send "******* Starting autoremove..."
 
-if command -v notify-send &> /dev/null
+if command -v notify-send &> /dev/null; then
     apt autoremove -y | while IFS= read -r line; do notify-send "$line"; done
 else
     apt autoremove
